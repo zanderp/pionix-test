@@ -1,0 +1,161 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+    /*
+* Base structure
+*/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+padding-top: 50px;
+}
+
+
+/*
+* Global add-ons
+*/
+
+.sub-header {
+padding-bottom: 10px;
+border-bottom: 1px solid #eee;
+}
+
+/*
+* Top navigation
+* Hide default border to remove 1px line.
+*/
+.navbar-fixed-top {
+border: 0;
+}
+
+/*
+* Sidebar
+*/
+
+/* Hide for mobile, show later */
+.sidebar {
+display: none;
+}
+@media (min-width: 768px) {
+.sidebar {
+position: fixed;
+top: 51px;
+bottom: 0;
+left: 0;
+z-index: 1000;
+display: block;
+padding: 20px;
+overflow-x: hidden;
+overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+background-color: #f5f5f5;
+border-right: 1px solid #eee;
+}
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+margin-right: -21px; /* 20px padding + 1px border */
+margin-bottom: 20px;
+margin-left: -20px;
+}
+.nav-sidebar > li > a {
+padding-right: 20px;
+padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+color: #fff;
+background-color: #428bca;
+}
+
+
+/*
+* Main content
+*/
+
+.main {
+padding: 20px;
+}
+@media (min-width: 768px) {
+.main {
+padding-right: 40px;
+padding-left: 40px;
+}
+}
+.main .page-header {
+margin-top: 0;
+}
+
+
+/*
+* Placeholder dashboard ideas
+*/
+
+.placeholders {
+margin-bottom: 30px;
+text-align: center;
+}
+.placeholders h4 {
+margin-bottom: 0;
+}
+.placeholder {
+margin-bottom: 20px;
+}
+.placeholder img {
+display: inline-block;
+border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">PionixTest</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/dashboard">Dashboard</a></li>
+              <li><a href="/profile">Profile</a></li>
+              <li><a href="/logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+              <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+              <li><a href="/projects">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Dashboard</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+      <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/vendor/holder.min.js"></script>
+</body>
+</html>

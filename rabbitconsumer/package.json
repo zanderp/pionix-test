@@ -1,0 +1,11 @@
+{
+  "name": "rabbitconsumer",
+  "version": "1.0.0",
+  "description": "rabbitmq consumer client",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Alexandru Popa",
+  "license": "ISC"
+}

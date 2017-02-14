@@ -1,0 +1,14 @@
+{
+  "name": "soaper",
+  "version": "1.0.0",
+  "description": "Soap test",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "soap"
+  ],
+  "author": "Alexandru Popa",
+  "license": "ISC"
+}
